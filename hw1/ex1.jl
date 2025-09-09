@@ -41,7 +41,7 @@ function solve_with_print(prob, alg, dt; label::AbstractString)
     end
     println("────────────────────────────────────────────────────────────\n")
 
-    return t_vals, y_vals
+    return x_vals, y_vals
 end
 
 # --- Executa métodos com os passos pedidos (com prints) -----------------------
@@ -103,5 +103,5 @@ scatterlines!(ax3, x_exp, rel_err_exp, label = "Explícito (h=0.1)", markersize=
 axislegend(ax3, position = :rb)
 
 display(fig)
-save("ex1.png", fig)
-println("\nFigura salva em: solucoes_e_erros.png\n")
+save("figs/ex1.png", fig)
+println("\nFigura salva em: figs/ex1.png\n")

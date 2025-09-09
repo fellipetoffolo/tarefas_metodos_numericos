@@ -120,7 +120,7 @@ fig = Figure(size = (1100, 900))
 x_dense = LinRange(tspan[1], tspan[2], 400)
 y_dense = r6.(y_exact.(x_dense))
 
-ax1 = Axis(fig[1, 1], title = "Soluções em [0, 10]",
+ax1 = Axis(fig[1, 1], title = "Soluções em [0, 20]",
            xlabel = "t", ylabel = "v(t)")
 lines!(ax1, x_dense, y_dense, label = "Exata", color = :red, linewidth = 4)
 scatterlines!(ax1, x_heun, y_heun, label = "Euler Melhorado", markersize = 8, color = :black)
@@ -142,5 +142,5 @@ scatterlines!(ax3, x_calc, rel_err_calc, label = "Euler Explícito", markersize 
 axislegend(ax3, position = :rb)
 
 display(fig)
-save("problema_paraquedista.png", fig)
-println("\nFigura salva em: problema_paraquedista.png\n")
+save("figs/ex3.png", fig)
+println("\nFigura salva em: figs/ex3.png\n")

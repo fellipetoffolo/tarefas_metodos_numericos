@@ -140,5 +140,5 @@ scatterlines!(ax3, x_calc, rel_err_calc, label = "Euler Explícito", markersize=
 axislegend(ax3, position = :rb)
 
 display(fig)
-save("ex2.png", fig)
-println("\nFigura salva em: solucoes_e_erros_euler_melhorado.png\n")
+save("figs/ex2.png", fig)
+println("\nFigura salva em: figs/ex2.png\n")
