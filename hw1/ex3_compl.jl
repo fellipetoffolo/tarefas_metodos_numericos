@@ -63,7 +63,7 @@ function main()
         return
     end
 
-    t, v_aprox = heun_until_t(parachute, P, u0, T_MIN, t_target; desired_dt=target_dt, print_steps=true)
+    t, v_aprox = heun_until_t(parachute, P, u0, T_MIN, t_target; desired_dt=target_dt, print_steps=false)
 
     v_exata = y_exact(t_target)
     abs_err = abs(v_aprox - v_exata)

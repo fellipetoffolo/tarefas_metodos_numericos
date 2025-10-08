@@ -77,8 +77,8 @@ function main()
     plot!(ax, t_values, v_values, label = "Solução Numérica (Heun)", color = :blue)
     
     # Salvando a figura
-    save("figs/ex4.png", fig)
-    println("\nFigura salva em: figs/ex4.png\n")
+    save("figs/ex42.png", fig)
+    println("\nFigura salva em: figs/ex42.png\n")
     # Mostrando o gráfico
     display(fig)
 end

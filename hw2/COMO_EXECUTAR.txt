@@ -1,0 +1,10 @@
+Passo 1: Instalar a linguagem Julia e dependências (perguntar ao GPT)
+
+Passo 2: Utilizar o REPL (Ambiente interpretado real time de Julia) para instalar as bibliotecas através do gerenciador de pacotes "Pkg". Perguntar como instalar as bibliotecas "DifferentialEquations", "OrdinaryDiffeEq", "OrdinaryDiffEqTaylorSeries", "Makie" e "GLMakie" ao GPT.
+
+Passo 3: Baixar os arquivos e entrar no diretório em que eles se encontram (pasta).
+
+Passo 4: para Linux, entrar no diretório em que os arquivos se encontram e executar o arquivo desejado com o comando "julia arq.jl".
+Perguntar ao GPT caso o ambiente seja Windows.
+
+Alternativa: Abrir com alguma IDE e executar por ela.
